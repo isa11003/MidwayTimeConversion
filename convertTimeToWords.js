@@ -1,3 +1,8 @@
+/*********************************************
+* convertNumberToWords
+* parameter: num (number)
+* used to convert a number to words
+*********************************************/
 function convertNumberToWords(num)
 {
 	var numberInWords = ""; //initialize to empty string
@@ -104,6 +109,12 @@ function convertNumberToWords(num)
 
 }
 
+/************************************************
+* converTimeToWords
+* Parameters: hours (number), minutes (number)
+* Used to create a sentence reflecting what time
+* it is based off the hours and minutes provided.
+************************************************/
 function convertTimeToWords(hours, minutes)
 {
 	var isCloserToNextHour = false;
@@ -129,9 +140,9 @@ function convertTimeToWords(hours, minutes)
 	
 	var hoursInWords = convertNumberToWords(hours);
 	var minutesInWords = convertNumberToWords(minutes);
-	var plural = minutes > 1 ? "s" : "";
+	var plural = minutes > 1 ? "s" : ""; // used to plural minutes if there are multiple minutes
 	
-	if (isCloserToNextHour)
+	if (isCloserToNextHour) //if closer to the next hour use to instead of past
 	{
 		if (minutes % 15 == 0)
 		{
