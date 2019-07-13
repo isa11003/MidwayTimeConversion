@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Midway Convert Time Tester</title>
+		<script src="convertTimeToWords.js"></script>
+				
+	</head>
+	<body>
+		<form>
+			Hours: <input id="hours1" type="number" value="5" />
+			minutes: <input id="minutes1" type="number" value="47" />
+			Result: <input id="results1" type="text" />
+			<br />
+			Hours: <input id="hours2" type="number" value="3" />
+			minutes: <input id="minutes2" type="number" value="0" />
+			Result: <input id="results2" type="text"/>
+			<br />
+			Hours: <input id="hours3" type="number" value="7" />
+			minutes: <input id="minutes3" type="number" value="29" />
+			Result: <input id="results3" type="text"/>
+			<br />
+			Hours: <input id="hours4" type="number" value="5" />
+			minutes: <input id="minutes4" type="number" value="30" />
+			Result: <input id="results4" type="text"/>
+			<br />
+			Hours: <input id="hours5" type="number" value="5" />
+			minutes: <input id="minutes5" type="number" value="45" />
+			Result: <input id="results5" type="text"/>
+			<br />
+			Hours: <input id="hours6" type="number" value="4" />
+			minutes: <input id="minutes6" type="number" value="15" />
+			Result: <input id="results6" type="text" />
+			<br />
+			Hours: <input id="hours7" type="number" value="6" />
+			minutes: <input id="minutes7" type="number" value="35" />
+			Result: <input id="results7" type="text" />
+			<br />
+			Hours: <input id="hours8" type="number" value="3" />
+			minutes: <input id="minutes8" type="number" value="30" />
+			Result: <input id="results8" type="text"  />
+			<br />
+			Hours: <input id="hours9" type="number" value="10" />
+			minutes: <input id="minutes9" type="number" value="57" />
+			Result: <input id="results9" type="text" />
+			<br />
+			Hours: <input id="hours10" type="number" value="1" />
+			minutes: <input id="minutes10" type="number" value="1" />
+			Result: <input id="results10" type="text" />
+			<br />
+			Hours: <input id="hours11" type="number" value="7" />
+			minutes: <input id="minutes11" type="number" value="15" />
+			Result: <input id="results11" type="text" />
+			<br />
+			Hours: <input id="hours12" type="number" value="12" />
+			minutes: <input id="minutes12" type="number" value="45" />
+			Result: <input id="results12" type="text" />
+		</form>
+		<button onClick="test()">Click</button>
+	</body>
+</html>
+
+<script>
+	function test()
+	{
+		var minutes = document.getElementById("minutes1").value;
+		var hours = document.getElementById("hours1").value;
+		document.getElementById("results1").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes2").value;
+		var hours = document.getElementById("hours2").value;
+		document.getElementById("results2").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes3").value;
+		var hours = document.getElementById("hours3").value;
+		document.getElementById("results3").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes4").value;
+		var hours = document.getElementById("hours4").value;
+		document.getElementById("results4").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes5").value;
+		var hours = document.getElementById("hours5").value;
+		document.getElementById("results5").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes6").value;
+		var hours = document.getElementById("hours6").value;
+		document.getElementById("results6").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes7").value;
+		var hours = document.getElementById("hours7").value;
+		document.getElementById("results7").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes8").value;
+		var hours = document.getElementById("hours8").value;
+		document.getElementById("results8").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes9").value;
+		var hours = document.getElementById("hours9").value;
+		document.getElementById("results9").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes10").value;
+		var hours = document.getElementById("hours10").value;
+		document.getElementById("results10").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes11").value;
+		var hours = document.getElementById("hours11").value;
+		document.getElementById("results11").value = convertTimeToWords(hours, minutes);
+		var minutes = document.getElementById("minutes12").value;
+		var hours = document.getElementById("hours12").value;
+		document.getElementById("results12").value = convertTimeToWords(hours, minutes);
+	}
+</script>
